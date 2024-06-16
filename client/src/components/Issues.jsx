@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Issue from './Issue';
 
 
-const Issues = ({updateToData}) => {
+const Issues = ({updateToData, setUpdateToData}) => {
     const [issues, setIssues] = useState([]);
     
     useEffect(() => {
@@ -25,7 +25,7 @@ const Issues = ({updateToData}) => {
     <div className='flex flex-col  mt-4 space-y-3'>
         {issues.map((issue) => {
             return (
-                <Issue key={issue.id} issue={issue} />
+                <Issue key={issue.id} issue={issue} setUpdateToData={setUpdateToData}/>
             )
         })}
     </div>

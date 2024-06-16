@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddIssue = ({setUpdateToData}) => {
     const mockData = { 
-        id: 5, 
+        id: 4, 
         title: "static mock data title", 
         description: "this is static mock data sent from the client in React"
     }

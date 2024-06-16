@@ -16,7 +16,7 @@ const App = () => {
           <div className='w-full sm:w-2/3'>
             <Header />
             <AddIssue setUpdateToData={setUpdateToData}/>
-            <Issues updateToData={updateToData}/>
+            <Issues updateToData={updateToData} setUpdateToData={setUpdateToData}/>
           </div>   
       </div>
     )
