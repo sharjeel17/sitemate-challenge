@@ -1,6 +1,7 @@
 import React from 'react'
 import Issues from './components/Issues'
 import Header from './components/Header'
+import AddIssue from './components/AddIssue'
 import { useState } from 'react'
 
 
@@ -14,6 +15,7 @@ const App = () => {
       <div className='w-full h-full flex justify-center'>
           <div className='w-full sm:w-2/3'>
             <Header />
+            <AddIssue setUpdateToData={setUpdateToData}/>
             <Issues updateToData={updateToData}/>
           </div>   
       </div>

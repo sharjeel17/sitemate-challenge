@@ -6,7 +6,6 @@ const Issues = ({updateToData}) => {
     const [issues, setIssues] = useState([]);
     
     useEffect(() => {
-        console.log(updateToData);
         fetch('http://localhost:3001/issue/all')
         .then((res) => {
             return res.json();
